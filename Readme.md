@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анна Митчелл](https://up.htmlacademy.ru/htmlcss/28/user/1385451).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
