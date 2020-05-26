@@ -10,8 +10,8 @@
       <nav>
        <ul>
         <li>
-        <a>
-          <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
+        <a href="index.html">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
         </a>
         </li>
           <li><a href="blank.html">Информация</a></li>
@@ -24,7 +24,47 @@
     <main>
       <section>
         <h2 class="visually-hidden">Поисковик жилья</h2>
-        <!--Здесь будет поисковик жилья-->
+        <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+         <ul>
+           <li>
+             <input type="checkbox" name="pool" id="filter-pool" checked>
+            <label for="filter-pool">Бассейн</label>
+           </li>
+            <li>
+              <input type="checkbox" name="parking" id="filter-parking" >
+            <label for="filter-parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wifi" id="filter-wifi" >
+            <label for="filter-wifi">Wi-fi</label>
+            </li>
+         </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+           <li>
+             <input type="checkbox" name="hotel" id="filter-hotel" checked>
+            <label for="filter-hotel">Отель</label>
+           </li>
+            <li>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+            <label for="filter-motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartament" id="filter-apartament" checked>
+            <label for="filter-apartament">Апартаменты</label>
+            </li>
+         </ul>
+      </fieldset>
+      <fieldset>
+        <label for="cost">Стоимость в сутки(Р):</label>
+          от 0 <input type="range" id="cost" name="cost" min="0" max="300" step="1"> до 300
+      </fieldset>
+    </form>
+     <button type="submit">Показать</button>
       </section>
     	<section>
     		<h2 class="visually-hidden">Список гостиниц</h2>
