@@ -1,0 +1,121 @@
+::root {
+  --basic-light-blue: #81B3D2;
+  --basic-light-gray: #EEEEEE;
+  --basic-gray: #F2F2F2;
+  --basic-darc-gray: #A9A9A9;
+  --basic-white: #FFFFFF;
+  --basic-light-brown: #766357;
+  --basic-brown: #604E43;
+  --basic-dark-brown: #503E33;
+  --basic-blue: #669EC0;
+  --basic-dark-blue: #5496BD;
+  --basic-black: #000000;
+
+  --special: #663d15;
+
+}
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans ", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a{
+	text-decoration: none;
+}
+.main-navigation {
+  font-weight: bold; 
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+	color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-light-gray);
+}
+.index-columns {
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+  background-image: url("..\img\background photo.jpg");
+  background-position: center, 0 0;
+ 
+}
+.index-columns h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-blue);
+  border: none;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--basic-blue);
+}
+.main-footer {
+  color: (--basic-black);
+  background: rgba(255, 255, 255, 0.9);
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-blue);
+}
