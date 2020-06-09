@@ -10,9 +10,7 @@
   --basic-blue: #669EC0;
   --basic-dark-blue: #5496BD;
   --basic-black: #000000;
-  --basic-light-black: #333333;
-  
-
+  --basic-light-black: #333333; 
 }
 
 body {
@@ -33,7 +31,7 @@ img {
   height: auto;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -182,6 +180,8 @@ input[type="radio"].visually-hidden {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   background-position: center, 0 0;
+  padding: 30px;
+  text-align: center;
 }
 
 .index-columns h3 {
@@ -203,7 +203,10 @@ input[type="radio"].visually-hidden {
 .features-list2 p {
   margin: 0 10px;
 }
-
+.features-list2 {
+  padding: 30px;
+  text-align: center;
+}
 .feature-item {
   text-align: center;
 }
