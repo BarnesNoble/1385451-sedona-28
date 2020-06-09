@@ -11,7 +11,7 @@
   --basic-dark-blue: #5496BD;
   --basic-black: #000000;
   --basic-light-black: #333333;
-  --special: #663d15;
+  
 
 }
 
@@ -26,9 +26,6 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  background-image: url("../img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 img {
@@ -72,7 +69,17 @@ li {
   grid-template-rows: min-content 1fr min-content;
   align-content: start;	
 }
-.visually-hidden {
+
+.wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -87,6 +94,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center; 
+  flex-wrap: wrap;
+  list-style: none;
   width: 100%;
   width: 1200px;
   margin: 0 auto;
@@ -102,12 +111,21 @@ li {
 	height: 70px;
 }
 
-.nav-list {
+/*.nav-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-}
+  outline: 5px solid #ff0000;
+}*/
 
 .nav-list a {
   color: var(--basic-black);
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 25px 20px;
 }
 
 .site-navigation a:hover,
@@ -134,10 +152,28 @@ li {
   display: block;
 }
 
-.benefits {
-  background-image: url("D:/download/Front-end/GitHub/1385451-sedona-28/img/background photo.jpg");
+.advantages-item {
+  display: flex;
 }
 
+.promo {
+  background-image: url("../img/background photo.jpg");
+  width: 1200px;
+  min-height: 509px;
+}
+
+.benefits {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 10px;
+
+}
+.benefits-title {
+	font-size: 21px;
+	line-height: 26px;
+
+}
 .benefits-text {
   color: var(--basic-light-black);
 }
@@ -145,7 +181,6 @@ li {
 .index-columns {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
-  background-image: url("..\img\background photo.jpg");
   background-position: center, 0 0;
 }
 
@@ -195,6 +230,8 @@ li {
 }
 
 .main-footer {
+  display: flex;
+  justify-content: space-between;
   color: (--basic-black);
   background: rgba(255, 255, 255, 0.9);
 }
