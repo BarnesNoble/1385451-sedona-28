@@ -24,6 +24,7 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
+  position: relative;
 }
 
 img {
@@ -280,7 +281,7 @@ input[type="radio"].visually-hidden {
   color: (--basic-black);
   background: rgba(255, 255, 255, 0.9);
   margin: 30px 25px;
-  
+
 }
 .search {
   position: relative;
@@ -296,6 +297,12 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .footer-social {
   text-align: center;
@@ -336,4 +343,7 @@ input[type="radio"].visually-hidden {
 form input:focus { 
   border-color: #0088cc;
   
+}
+.modal {
+  display: none;
 }
