@@ -280,6 +280,7 @@ input[type="radio"].visually-hidden {
   color: (--basic-black);
   background: rgba(255, 255, 255, 0.9);
   margin: 30px 25px;
+  
 }
 .search {
   position: relative;
