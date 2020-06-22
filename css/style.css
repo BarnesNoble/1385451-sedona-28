@@ -40,6 +40,7 @@ ul {
 	margin: 0; 
 	paddig-left: 0; 
 	list-style-type: none;
+  padding: 0;
 }
 
 fieldset {
@@ -246,6 +247,7 @@ input[type="radio"].visually-hidden {
 .features-title {
   font-size: 21px;
   font-weight: bold;
+  padding: 0 100px;
 }
 .desc-text {
   display: flex;
@@ -278,10 +280,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   color: (--basic-black);
   background: rgba(255, 255, 255, 0.9);
-  margin: 30px 25px;
-
+  min-height: 120px;
+  padding: 30px 25px;
 }
 .search {
   position: relative;
@@ -334,16 +337,81 @@ input[type="radio"].visually-hidden {
 .social-button:focus {
   background-color: var(--basic-blue);
 }
-
+.social-button::active {
+  background-color: var(--basic-dark-blue);
+}
 
 .footer-logo img {
   display: block;
 }
-
+.footer-copyright {
+    margin-right: 90px;
+}
 form input:focus { 
   border-color: #0088cc;
   
 }
 .modal {
   display: none;
+}
+.btn {
+  display: inline-block;
+  padding: 5px 5px;
+  background-color: var(--basic-light-blue);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.16;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  color: var(--basic-white);
+  border-radius: 0;
+}
+.btn-brown {
+  background-color: var(--basic-light-brown);
+}
+.hotels-item {
+  display: flex;
+  padding: 30px 73px;
+}
+.hotels-raiting {
+  margin-left: auto;
+}
+.hotels-item-section {
+  margin-left: 30px;
+}
+.filter-form {
+  display: flex;
+}
+.filter-fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-left: 72px;
+  margin-top: 26px;
+
+}
+.filter-fieldset:last-child {
+  margin-left: auto;
+}
+.filter {
+  background-image: url(../img/background.catalog.jpg);
+  min-height: 217px;
+  
+}
+.filter-legend {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--basic-white);
+  margin-bottom: 25px;
+}
+.filter-checkbox-label,
+.filter-checkbox,
+.filter-item {
+  margin: 0;
+  padding: 0;
+  color: var(--basic-white);
+}
+.filter-item {
+  margin-bottom: 25px;
 }
