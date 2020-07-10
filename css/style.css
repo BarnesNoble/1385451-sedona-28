@@ -349,7 +349,11 @@ input[type="radio"].visually-hidden {
 }
 form input:focus { 
   border-color: #0088cc;
-  
+}
+.footer-phone {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
 }
 .modal {
   display: none;
@@ -429,7 +433,7 @@ form input:focus {
 
 }
 .filter-fieldset:last-child {
-  margin-left: auto;
+  margin-left: 400px;
 }
 .filter {
   background-image: url(../img/background.catalog.jpg);
@@ -509,6 +513,8 @@ form input:focus {
   height: 36px;
   border: 2px solid #FFFFFF;
   border-radius: 2px;
+  margin-top: 14px;
+  margin-left: 92px;
 }
 .hotels-item {
   display: flex;
@@ -533,9 +539,4 @@ form input:focus {
   line-height: 21px;
   color: #333333;
   padding-bottom: 10px;
-}
-.footer-phone {
-  font-size: 21px;
-  font-weight: bold;
-  color: #000000;
 }
