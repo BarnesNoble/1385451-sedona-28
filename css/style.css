@@ -354,6 +354,9 @@ form input:focus {
 .modal {
   display: none;
 }
+
+/* каталог  */
+
 .btn {
   display: inline-block;
   padding: 5px 5px;
@@ -370,16 +373,50 @@ form input:focus {
 .btn-brown {
   background-color: var(--basic-light-brown);
 }
-.hotels-item {
+.sorting {
   display: flex;
-  padding: 30px 73px;
+  justify-content: flex-start;
 }
-.hotels-raiting {
-  margin-left: auto;
+
+.sorting-title {
+  font-size: 21px;
+  font-weight: bold;
+  margin-right: 27px;
+  margin-left: 46px;
+  margin-top: 40px;
 }
-.hotels-item-section {
-  margin-left: 30px;
+.sorting-text {
+  font-size: 12px;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-left: 25px;
 }
+.sorting-item {
+  margin-top: 40px;
+}
+.sorting-item-link {
+  font-size: 12px;
+  margin-right: 40px; 
+}
+.sorting-item-link, 
+.active {
+  color: var(--basic-light-blue);
+}
+.sorting-list {
+  display: flex;
+}
+.sorting-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 11px;
+  height: 10px;
+  margin-top: 44px;
+  padding-left: 500px;
+}
+.sorting-down {
+  padding-right: 5px;
+}
+
 .filter-form {
   display: flex;
 }
@@ -414,4 +451,91 @@ form input:focus {
 }
 .filter-item {
   margin-bottom: 25px;
+}
+.range-filter {
+  width: 217px;
+}
+.range-controls {
+  position: relative;
+  margin-top: 20px;
+  height: 15px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-darc-gray);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: var(--basic-white);
+
+}
+.range-controls .pin {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+.range-controls .pin-min {
+  left: 1px;
+}
+.range-controls .pin-max {
+  left: 160px;
+}
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+.price-controls input {
+  width: 144px;
+  padding: 2px;
+  margin-left: 1px;
+  text-align: center;
+  border: none;
+
+}
+.range-filter-btn {
+  width: 137px;
+  height: 36px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+}
+.hotels-item {
+  display: flex;
+  padding: 30px 45px;
+}
+.hotels-raiting {
+  margin-left: auto;
+}
+.hotels-item-section {
+  margin-left: 30px;
+}
+.hotels-title {
+  margin: 0;
+
+  margin-bottom: 5px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.hotels-cell {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  padding-bottom: 10px;
+}
+.footer-phone {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
 }
