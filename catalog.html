@@ -43,15 +43,15 @@
 						<legend class="filter-legend">Инфраструктура:</legend>
 						<ul class="filter-list">
 							<li class="filter-item">
-								<input class="filter-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+								<input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
 								<label class="filter-checkbox-label" for="filter-pool">Бассейн</label>
 							</li>
 							<li class="filter-item">
-								<input class="filter-checkbox" type="checkbox" name="parking" id="filter-parking">
+								<input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="filter-parking">
 								<label class="filter-checkbox-label" for="filter-parking">Парковка</label>
 							</li>
 							<li class="filter-item">
-								<input class="filter-checkbox" type="checkbox" name="wifi" id="filter-wifi">
+								<input class="filter-checkbox visually-hidden" type="checkbox" name="wifi" id="filter-wifi">
 								<label class="filter-checkbox-label" for="filter-wifi">Wi-fi</label>
 							</li>
 						</ul>
@@ -60,15 +60,15 @@
 						<legend class="filter-legend">Тип жилья:</legend>
 						<ul class="filter-list">
 							<li class="filter-item">
-								<input class="filter-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+								<input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
 								<label class="filter-checkbox-label" for="filter-hotel">Отель</label>
 							</li>
 							<li class="filter-item">
-								<input class="filter-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+								<input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
 								<label class="filter-checkbox-label" for="filter-motel">Мотель</label>
 							</li>
 							<li class="filter-item">
-								<input class="filter-checkbox" type="checkbox" name="apartament" id="filter-apartament" checked>
+								<input class="filter-checkbox visually-hidden" type="checkbox" name="apartament" id="filter-apartament" checked>
 								<label class="filter-checkbox-label" for="filter-apartament">Апартаменты</label>
 							</li>
 						</ul>
@@ -77,13 +77,13 @@
 						<legend class="filter-legend">Стоимость в сутки (Р):</legend>
 						<div class="range-filter">
 							<div class="price-controls">
-								<div>
-									<label class="min-price"><span class="visually-hidden">от 0</span></label>
-									<input type="number" value="0" step="100" placeholder="от 0">
+								<div class="price-min">
+									<label class="price-min-label">от</label>
+									<input class="price-min-input" type="number" value="0" step="100" placeholder="от 0">
 								</div>
-								<div>
-									<label class="max-price"><span class="visually-hidden">до 3000</span></label>
-									<input type="number" value="3000" step="100" placeholder="до 3000">
+								<div class="price-max">
+									<label class="price-max-label">до</label>
+									<input class="price-max-input" type="number" value="3000" step="100" placeholder="до 3000">
 								</div>
 							</div>
 							<div class="range-controls">
@@ -188,12 +188,20 @@
 								</tr>
 							</table>
 						</div>
-						<div class="hotels-reting">
-							<div class="hotels-reting-stars">
-								<img class="hotels-reting-stars-img" src="img/star1.svg" width="19" height="17"
+						<div class="hotels-rating">
+							<div class="hotels-rating-stars">
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+									alt="Рейтинг отеля 5 звезд">
+									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+									alt="Рейтинг отеля 5 звезд">
+									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+									alt="Рейтинг отеля 5 звезд">
+									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+									alt="Рейтинг отеля 5 звезд">
+									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 5 звезд">
 							</div>
-							<div class="hotels-reting-text">
+							<div class="hotels-rating-text">
 								<!--Для рейтинга-->
 							</div>
 						</div>

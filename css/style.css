@@ -129,7 +129,9 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-dark-blue);
 }
 
-
+.map {
+  margin-bottom: -180px;
+}
 .header-link,
 .map-img  {
   display: block;	
@@ -302,10 +304,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 .main-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+ 
 }
 .footer-social {
   text-align: center;
@@ -356,7 +355,12 @@ form input:focus {
   color: #000000;
 }
 .modal {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 100%;
+}
+.modal-open {
+  display: block;
 }
 
 /* каталог  */
@@ -453,6 +457,33 @@ form input:focus {
   padding: 0;
   color: var(--basic-white);
 }
+.filter-checkbox-label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+.filter-checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-image: url(../img/checkbox-off.svg);
+}
+.filter-checkbox:checked + .filter-checkbox-label::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+.filter-checkbox:focus + .filter-checkbox-label::before {
+
+}
+.filter-checkbox:disabled + .filter-checkbox-label  {
+
+}
 .filter-item {
   margin-bottom: 25px;
 }
@@ -500,13 +531,24 @@ form input:focus {
   display: flex;
   justify-content: space-between;
 }
-.price-controls input {
-  width: 144px;
-  padding: 2px;
-  margin-left: 1px;
-  text-align: center;
-  border: none;
 
+.price-min,
+.price-max {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  font-size: 14px;
+}
+.price-min-label,
+.price-max-label {
+
+}
+.price-min-input,
+.price-max-input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
 }
 .range-filter-btn {
   width: 137px;
@@ -520,7 +562,7 @@ form input:focus {
   display: flex;
   padding: 30px 45px;
 }
-.hotels-raiting {
+.hotels-rating {
   margin-left: auto;
 }
 .hotels-item-section {
