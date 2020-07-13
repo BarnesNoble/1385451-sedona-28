@@ -118,18 +118,26 @@
         <div class="search">
           <button type="button" class="button-search">Поиск гостиницы в Седоне</button>
           <section class="modal">
-            <h2>Поиск гостиницы в Седоне</h2>
-            <form class="search" action="https://echo.htmlacademy.ru/courses" method="post">
-              <p>
-                <label for="arrival">Дата заезда:</label>
-                <input type="text" id="arrival" value="24 апреля 2017">
-              </p>
-              <label for="departure">Дата выезда:</label>
-              <input type="text" id="departure" value="04 июля 2017">
-              <p>Взрослые</p>
-              <p>Дети</p>
+            <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="post">
+              <div class="search-form-checkin">
+                <label class="search-label" for="arrival">Дата заезда:</label>
+                <input class="search-input" type="text" id="arrival" value="24 апреля 2017">
+              </div>
+              <div class="search-form-checkout">
+                <label class="search-label" for="departure">Дата выезда:</label>
+                <input class="search-input" type="text" id="departure" value="04 июля 2017">
+              </div>
+              <div class="search-form-people">
+                <div class="search-form-adult">
+                  <p class="search-form-text">Взрослые</p>
+                </div>
+                <div class="search-form-kids">
+                  <p class="search-form-text">Дети</p>
+                </div>
+              </div>
             </form>
-            <button type="button" class="button">Найти</button>
+            <button type="button" class="button button-form">Найти</button>
           </section>
         </div>
       </section>
@@ -169,7 +177,7 @@
       </div>
     </div>
   </footer>
-  
+
   </div>
   <script src="js/main.js"></script>
 </body>
