@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<div class="wrapper">
 		<header class="main-header">
@@ -66,7 +68,8 @@
 								<label class="filter-checkbox-label" for="filter-motel">Мотель</label>
 							</li>
 							<li class="filter-item">
-								<input class="filter-checkbox visually-hidden" type="checkbox" name="apartament" id="filter-apartament" checked>
+								<input class="filter-checkbox visually-hidden" type="checkbox" name="apartament" id="filter-apartament"
+									checked>
 								<label class="filter-checkbox-label" for="filter-apartament">Апартаменты</label>
 							</li>
 						</ul>
@@ -76,11 +79,11 @@
 						<div class="range-filter">
 							<div class="price-controls">
 								<div class="price-min">
-									<label class="price-min-label">от</label>
+									<label class="price-min-label" for="price-min-input">от</label>
 									<input class="price-min-input" type="number" value="0" step="100" placeholder="от 0">
 								</div>
 								<div class="price-max">
-									<label class="price-max-label">до</label>
+									<label class="price-max-label" for="price-max-input">до</label>
 									<input class="price-max-input" type="number" value="3000" step="100" placeholder="до 3000">
 								</div>
 							</div>
@@ -113,18 +116,18 @@
 						</li>
 					</ul>
 					<div class="sorting-btn">
-						<button class="sorting-up" type="button">
+						<a class="sorting-up">
 							<span class="visually-hidden">Сортировать с верха</span>
 							<svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
-								<path d="M5.5 0L0 10H11L5.5 0Z"/>
-								</svg>
-						</button>
-						<button class="sorting-down" type="button">
+								<path d="M5.5 0L0 10H11L5.5 0Z" />
+							</svg>
+						</a>
+						<a class="sorting-down">
 							<span class="visually-hidden">Сортировать с низа</span>
 							<svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
-								<path d="M5.5 10L0 0H11"/>
-								</svg>
-						</button>
+								<path d="M5.5 10L0 0H11" />
+							</svg>
+						</a>
 					</div>
 				</div>
 				<ul class="hotels-list">
@@ -132,28 +135,26 @@
 						<img class="hotels-img" src="img/hotel1.jpg" width="135" height="90" alt="Гостиница Amara resort">
 						<div class="hotels-item-section">
 							<h3 class="hotels-title">Amara Resort & Spa</h3>
-							<table class="hotels-table">
-								<tr class="hotels-row">
-									<td class="hotels-cell">Гостиница</td>
-									<td class="hotels-cell">от 4000 Р.</td>
-								</tr>
-								<tr class="hotels-row">
-									<td class="hotels-cell"><a class="hotels-btn btn" href="#">Подробнее</a></td>
-									<td class="hotels-cell"><button class="hotels-btn btn btn-brown">Забронировать</button></td>
-								</tr>
-							</table>
+							<div class="hotels-table">
+								<p class="hotels-cell">Гостиница</p>
+								<p class="hotels-cell">от 4000 Р.</p>
+								<div class="hotels-row">
+									<a class="hotels-btn btn" href="#">Подробнее</a>
+									<a class="hotels-btn btn btn-brown">Забронировать</a>
+								</div>
+							</div>
 						</div>
 						<div class="hotels-rating">
 							<div class="hotels-rating-stars">
 								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 5 звезд">
-									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 5 звезд">
-									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 5 звезд">
-									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 5 звезд">
-									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 5 звезд">
 							</div>
 							<div class="hotels-rating-text">
@@ -165,24 +166,24 @@
 						<img class="hotels-img" src="img/hotel2.jpg" width="135" height="90" alt="Мотель Desert quail inn">
 						<div class="hotels-item-section">
 							<h3 class="hotels-title">Desert quail inn</h3>
-							<table class="hotels-table">
-								<tr class="hotels-row">
-									<td class="hotels-cell">Мотель</td>
-									<td class="hotels-cell">от 3000 Р.</td>
-								</tr>
-								<tr class="hotels-row">
-									<td class="hotels-cell"><a class="hotels-btn btn" href="#">Подробнее</a></td>
-									<td class="hotels-cell"><button class="hotels-btn btn btn-brown">Забронировать</button></td>
-								</tr>
-							</table>
+							<div class="hotels-table">
+								<div class="hotels-row">
+									<p class="hotels-cell">Мотель</p>
+									<p class="hotels-cell">от 3000 Р.</p>
+								</div>
+								<div class="hotels-row">
+									<a class="hotels-btn btn" href="#">Подробнее</a>
+									<a class="hotels-btn btn btn-brown">Забронировать</a>
+								</div>
+							</div>
 						</div>
 						<div class="hotels-rating">
 							<div class="hotels-rating-stars">
 								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 3 звезды">
-									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 3 звезды">
-									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 3 звезды">
 							</div>
 							<div class="hotels-rating-text">
@@ -195,22 +196,22 @@
 							alt="Апартаменты Villas at poco diablo">
 						<div class="hotels-item-section">
 							<h3 class="hotels-title">Villas at poco diablo</h3>
-							<table class="hotels-table">
-								<tr class="hotels-row">
-									<td class="hotels-cell">Апартаменты</td>
-									<td class="hotels-cell">от 2000 Р.</td>
-								</tr>
-								<tr class="hotels-row">
-									<td class="hotels-cell"><a class="hotels-btn btn" href="#">Подробнее</a></td>
-									<td class="hotels-cell"><button class="hotels-btn btn btn-brown">Забронировать</button></td>
-								</tr>
-							</table>
+							<div class="hotels-table">
+								<div class="hotels-row">
+									<p class="hotels-cell">Апартаменты</p>
+									<p class="hotels-cell">от 2000 Р.</p>
+								</div>
+								<div class="hotels-row">
+									<a class="hotels-btn btn" href="#">Подробнее</a>
+									<a class="hotels-btn btn btn-brown">Забронировать</a>
+								</div>
+							</div>
 						</div>
 						<div class="hotels-rating">
 							<div class="hotels-rating-stars">
 								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 2 звезды">
-									<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
+								<img class="hotels-rating-stars-img" src="img/star1.svg" width="19" height="17"
 									alt="Рейтинг отеля 2 звезды">
 							</div>
 							<div class="hotels-rating-text">
