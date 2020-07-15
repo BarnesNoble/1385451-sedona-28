@@ -108,7 +108,7 @@ input[type="radio"].visually-hidden {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 -webkit-appearance: none;
-margin: 0;
+  margin: 0;
 }
 
 input[type=number] {
@@ -503,7 +503,7 @@ input[type=number] {
 }
 
 .footer-copyright {
-    margin-right: 90px;
+  margin-right: 90px;
 }
 
 form input:focus { 
