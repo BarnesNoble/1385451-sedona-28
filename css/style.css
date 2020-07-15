@@ -520,6 +520,7 @@ form input:focus {
 
 .btn {
   display: inline-block;
+  vertical-align: auto;
   padding: 5px 5px;
   background-color: var(--basic-light-blue);
   font-size: 14px;
@@ -530,7 +531,6 @@ form input:focus {
   border: 0;
   color: var(--basic-white);
   border-radius: 0;
-  vertical-align: auto;
 }
 
 .btn-brown {
@@ -648,12 +648,6 @@ form input:focus {
   background-image: url(../img/checkbox-on.svg);
 }
 
-.filter-checkbox:focus + .filter-checkbox-label::before {
-
-}
-.filter-checkbox:disabled + .filter-checkbox-label  {
-
-}
 .filter-item {
   margin-bottom: 25px;
 }
